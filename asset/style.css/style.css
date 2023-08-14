@@ -22,7 +22,7 @@
 }
 
 h1 {
-  color: chartreuse;
+  color: rgb(123, 255, 0);
   text-align: center;
 }
 
@@ -50,11 +50,17 @@ textarea {
   margin: 10px;
   border-radius: 10px;
   background: transparent;
-  color: #fff;
-  box-shadow: 8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
+  color: #e48110;
+  box-shadow: 8px -8px 15px #ffffff1a,5px 5px 15px #00000033;
   font-size: 25px;
 }
 
 #equal {
-  background: red;
+  background: #ff0000;
+  color: #fff;
+}
+
+#clear {
+  background: #fff;
+  color: #000;
 }

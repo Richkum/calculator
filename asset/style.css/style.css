@@ -1,66 +1,104 @@
-* {
+
+
+
+
+
+
+
+
+*{
   margin: 0;
   padding: 0;
-  font-family: 'poppins', sans-serif;
   box-sizing: border-box;
 }
 
-.container {
+.main {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #e3f9ff;
+  background: #202019;
   width: 100%;
   height: 100vh;
 }
-.calculator {
+
+
+.container {
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  border-radius: 25px;
-  background: #3a4452;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  /* height: 100vh; */
+  padding: 25px;
+  border-radius: 30px;
 }
 
-h1 {
-  color: rgb(123, 255, 0);
-  text-align: center;
-}
-
-form .display {
+.display {
   display: flex;
-
-}
-
-textarea {
-  font-size: 25px;
-  height: 10vh;
-  border-radius: 10px;
-  margin: 20px;
-  background: rgb(27, 222, 248);
-  text-align: right;
-  border: 0;
-  text-justify: inter-word;
-}
-
-.calculator form input {
-  border: 0;
-  outline: 0;
-  width: 65px;
-  height: 65px;
-  margin: 10px;
-  border-radius: 10px;
-  background: transparent;
-  color: #e48110;
-  box-shadow: 8px -8px 15px #ffffff1a,5px 5px 15px #00000033;
-  font-size: 25px;
-}
-
-#equal {
-  background: #ff0000;
+  justify-content: center;
+  align-items: center;
   color: #fff;
+  /* width: 100%; */
+  /* height: 40%; */
 }
 
-#clear {
-  background: #fff;
+.display textarea {
+  justify-content: center;
+  font-size: 20px;
+  color: #fff;
+  background-color: #000;
+  border: none;
+}
+
+/* .buttons {
+
+} */
+
+.rows {
+  width: 100%;
+  height: 50%;
+  background-color: #000;
+  /* display: grid; */
+  /* grid-template-columns: 25% 25% 25% 25%; */
+}
+
+.btn {
+ width: 60px;
+ height: 65px;
+ border-radius: 100px;
+ color: #fff;
+ padding: 1.5px;
+ cursor: pointer;
+}
+
+.btn1 {
+  background-color: #a5a5a5;
   color: #000;
+  border: none;
+}
+
+.percent {
+  background-color: #a5a5a5;
+  border: none;
+  color: #000;
+}
+
+.sign {
+  background-color: #FF9F0A;
+  border: none;
+}
+
+.numb, .comma {
+  background-color: #343434;
+  border: none;
+}
+
+#last {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.zero {
+  width: 120px;
+  border: none;
 }

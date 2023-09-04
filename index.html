@@ -7,45 +7,44 @@
     <link rel="stylesheet" href="asset/style.css/style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="calculator">
-            <h1>Sceintific Calculator</h1>
-            <form>
-                <div class="display">
-                     <textarea type="text" name="display"></textarea>
-                </div>
-                <div>
-                    <input id="clear" type="button" value="x">
-                    <input type="button" value="CD">
-                    <input type="button" value=".">
-                    <input type="button" value="/">
-                </div>
-                <div>
-                    <input type="button" value="7">
-                    <input type="button" value="8">
-                    <input type="button" value="9">
-                    <input type="button" value="+">
-                </div>
-                <div>
-                    <input type="button" value="4">
-                    <input type="button" value="5">
-                    <input type="button" value="6">
-                    <input type="button" value="-">
-                </div>
-                <div>
-                    <input type="button" value="1">
-                    <input type="button" value="2">
-                    <input type="button" value="3">
-                    <input type="button" value="*">
-                </div>
-                <div>
-                    <input type="button" value="0">
-                    <input type="button" value="%">
-                    <input type="button" value="^">
-                    <input id="equal" type="button" value="=">
-                </div>
-            </form>
+    <div class="main">
+        <div class="container">
+          <div class="display">
+            <textarea placeholder="0"></textarea>
+          </div>
+          <div class="buttons">
+            <div class="rows">
+              <button class="btn btn1 clear">AC</button>
+              <button class="btn btn1 negpos" value="+/-">+/-</button>
+              <button class="btn percent caltn" value="%">%</button>
+              <button class="btn sign caltn" value="/">/</button>
+            </div>
+            <div class="rows">
+              <button class="btn numb" value="7">7</button>
+              <button class="btn numb" value="8">8</button>
+              <button class="btn numb" value="9">9</button>
+              <button class="btn sign caltn" value="*">*</button>
+            </div>
+            <div class="rows">
+              <button class="btn numb" value="4">4</button>
+              <button class="btn numb" value="5">5</button>
+              <button class="btn numb" value="6">6</button>
+              <button class="btn sign caltn" value="-">-</button>
+            </div>
+            <div class="rows">
+              <button class="btn numb" value="1">1</button>
+              <button class="btn numb" value="2">2</button>
+              <button class="btn numb" value="3">3</button>
+              <button class="btn sign caltn" value="+">+</button>
+            </div>
+            <div class="rows" id="last">
+              <button class="btn zero numb" value="0">0</button>
+              <button class="btn comma" value=",">,</button>
+              <button class="btn sign equals" value="=">=</button>
+            </div>
+          </div>
         </div>
     </div>
+    <script src="asset/script/cal.js" defer></script>
 </body>
 </html>

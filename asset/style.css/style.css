@@ -27,11 +27,12 @@ h1 {
   height: 80px;
   width: 100%;
   text-align: right;
-  border: 3px solid #fff;
+  border: none;
   border-radius: 10px;
   margin-bottom: 20px;
-  font-size: 25px;
+  font-size: 50px;
   color: #002b50;
+  background-color: rgba(194, 194, 194, 0.733);
   pointer-events: none;
 }
 
@@ -62,6 +63,11 @@ h1 {
   background-color: #ffe139;
   color: #00378a;
   box-shadow: 1px 1px 3px 3px rgba(145, 248, 255, 0.514);
+}
+
+#clear {
+  color: #000;
+  background-color: rgb(190, 255, 38);
 }
 
 #equal {

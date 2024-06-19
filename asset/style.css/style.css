@@ -1,88 +1,81 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.main {
+body {
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #202019;
-  width: 100%;
-  height: 100vh;
+  background: #000514;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  align-items: center;
-  justify-content: center;
-  background: #000;
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 35px;
   padding: 25px;
-  border-radius: 30px;
+  background: #006bb3;
+  box-shadow: 1px 1px 25px 3px rgb(201, 255, 255);
+}
+
+h1 {
+  font-weight: 1000;
+  color: aqua;
+  font-size: bold;
+  text-decoration-color: aquamarine;
 }
 
 .display {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-}
-
-.display textarea {
-  justify-content: center;
-  font-size: 20px;
-  color: #fff;
-  background-color: #000;
-  border: none;
-}
-
-.rows {
+  height: 80px;
   width: 100%;
-  height: 50%;
-  background-color: #000;
+  text-align: right;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 50px;
+  color: #002b50;
+  background-color: rgba(194, 194, 194, 0.733);
+  pointer-events: none;
 }
 
-.btn {
-  width: 60px;
-  height: 65px;
-  border-radius: 100px;
-  color: #fff;
-  padding: 1.5px;
+.buttons {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  border-radius: 6px;
+}
+
+.numb {
+  padding: 10px;
+  border-radius: 40%;
+  border: none;
+  font-size: 20px;
   cursor: pointer;
+  background-color: #acffe6;
+  box-shadow: 1px 1px 3px 3px rgba(201, 255, 255, 0.712);
+
 }
 
-.btn1 {
-  background-color: #a5a5a5;
+.operator {
+  padding: 10px;
+  border-radius: 40%;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #ffe139;
+  color: #00378a;
+  box-shadow: 1px 1px 3px 3px rgba(145, 248, 255, 0.514);
+}
+
+#clear {
   color: #000;
-  border: none;
+  background-color: rgb(190, 255, 38);
 }
 
-.percent {
-  background-color: #a5a5a5;
-  border: none;
-  color: #000;
+#equal {
+  font-weight: 1000;
+  color: antiquewhite;
+  background-color: rgb(255, 132, 31);
 }
 
-.sign {
-  background-color: #ff9f0a;
-  border: none;
-}
-
-.numb,
-.comma {
-  background-color: #343434;
-  border: none;
-}
-
-#last {
-  display: flex;
-  gap: 0.3rem;
-}
-
-.zero {
-  width: 120px;
-  border: none;
+.buttons button:active {
+  transform: scale(0.99);
 }
